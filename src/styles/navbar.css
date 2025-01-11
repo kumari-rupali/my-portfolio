@@ -1,0 +1,86 @@
+/*# navbar css */
+.navbar {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+  
+  .navbar h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #1b07f8;
+  }
+
+/* Dark Mode Styles */
+.navbar.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.navbar.dark a {
+  color: #ffffff;
+}
+
+.navbar.dark .theme-toggle {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+/* Light Mode Styles */
+.navbar.light {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.navbar.light a {
+  color: #1a1a1a;
+}
+
+.navbar.light .theme-toggle {
+  background-color: #f0f0f0;
+  color: #1a1a1a;
+  border: 1px solid #ddd;
+}
+
+.theme-toggle {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  background: none;
+  border: none;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
