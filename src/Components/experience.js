@@ -4,14 +4,18 @@ import "../styles/experience.css";
 
 const experiences = [
   {
-    role: 'Software Engineer',
-    company: 'Kaay Labs',
-    duration: 'Sep 2023 - Present',
-    description: 'Worked on full-stack projects, enhancing user experiences by building scalable and efficient web applications using React and Node.js.',
+    company: 'Kaaylabs Pvt. Ltd.',
+    role: 'Associate Software Engineer',
+    duration: 'Sep 2023 - Sep 2024',
+    description: [
+      'Developed and maintained web applications using React and Node.js',
+      'Implemented RESTful APIs and integrated with various services',
+      'Collaborated with cross-functional teams to deliver high-quality software'
+    ]
   },
   {
     role: 'React Developer Intern',
-    company: 'Kaay Labs',
+    company: 'Kaaylabs Pvt. Ltd.',
     duration: 'May 2023 - Sep 2023',
     description: 'Developed a Naukri profile application and a calculator tool as part of internship projects.',
   },

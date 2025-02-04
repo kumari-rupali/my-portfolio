@@ -1,0 +1,32 @@
+/* Home css */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background-color: #b49df1;
+    color: #000000;
+}
+
+h1,
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #204b75;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #000000;
+}
+
+.contact-section,
+.projects-section,
+.about-section,
+.skills-section {
+    margin-top: 50px;
+    text-align: center;
+}

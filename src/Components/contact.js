@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import "../styles/contact.css";
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     number: '',
