@@ -1,29 +1,29 @@
 /* Contact css */
 .contact-card {
-  background: #fff;
+  background: #3b0278;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  box-shadow: 0 4px 12px rgba(95, 14, 195, 0.1);
+  padding: 3rem;
   max-width: 600px;
   margin: 40px auto;
   text-align: center;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Dancing Script',cursive;
 }
 
 .contact-card h4 {
   font-size: 1.8rem;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .contact-card p {
   font-size: 1rem;
-  color: #666;
+  color: #fffbfb;
   margin-bottom: 20px;
 }
 
 .contact-card a {
-  color: #007BFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -33,7 +33,7 @@
 
 .contact-card h3 {
   font-size: 1.5rem;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -48,7 +48,7 @@
 .form-group label {
   display: block;
   font-size: 1rem;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 5px;
 }
 
@@ -63,12 +63,12 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #007BFF;
+  border-color: #5b15f1;
   outline: none;
 }
 
 .submit-btn {
-  background: #007BFF;
+  background: #1d0434;
   color: #fff;
   padding: 12px 20px;
   border: none;
@@ -79,7 +79,7 @@
 }
 
 .submit-btn:hover {
-  background: #0056b3;
+  background: #190161;
 }
 
 .form-status {

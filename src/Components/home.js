@@ -5,7 +5,7 @@ import About from './about';
 import Projects from './projects';
 import Contact from './contact';
 import "../styles/home.css";
-import pic from "../image/my-profile-pic.jpg";
+import pic from "../image/my-profile-pic.png";
 
 const Home = () => {
   return (
@@ -16,15 +16,26 @@ const Home = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <div className="row container align-items-center">
-          <div className="col-md-6 text-content">
-            <h5 className="text-primary">Hi, My name is</h5>
+          <div className="container text-content">
+          <motion.div
+            className="col-md-6 text-center"
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1.2, duration: 0.8 }}
+          >
+            <img
+              src={pic}
+              alt="Kumari Rupali"
+              className="img-fluid"
+            />
+          </motion.div>
             <motion.h1
               initial={{ y: 100 }}
               animate={{ y: 0 }}
               transition={{ type: 'spring', stiffness: 100, damping: 10 }}
               className="display-4 fw-bold"
             >
+              <h5 className="text-primary">Hi, My name is</h5>
               Kumari Rupali
             </motion.h1>
             <h2 className="text-secondary">I'm Full Stack Developer</h2>
@@ -51,28 +62,13 @@ const Home = () => {
             >
               <a
                 href="https://drive.google.com/file/d/1jIRUUFz2eJZnqIUfqYCoShENUKxBz10O/view?usp=drive_link"
-                className="btn btn-primary btn-lg"
+                className="btn btn-light btn-sm"
                 download
               >
                 Download Resume
               </a>
             </motion.div>
           </div>
-
-          <motion.div
-            className="col-md-6 text-center"
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1.2, duration: 0.8 }}
-          >
-            <img
-              src={pic}
-              alt="Kumari Rupali"
-              className="img-fluid rounded-circle shadow-lg"
-              style={{ width: '300px', height: '300px' }}
-            />
-          </motion.div>
-        </div>
       </motion.div>
 
       <motion.div

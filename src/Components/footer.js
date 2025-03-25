@@ -42,7 +42,7 @@ const Footer = () => {
 
         <div className="contact-info">
           <p>Email: kumarirupali992@gmail.com</p>
-          <p>Address: Thiruporur, Chennai, Tamil Nadu, India</p>
+          <p>Address: Chennai, Tamil Nadu, India</p>
         </div>
         <p>&copy; {new Date().getFullYear()} Kumari Rupali. All Rights Reserved.</p>
       </motion.div>

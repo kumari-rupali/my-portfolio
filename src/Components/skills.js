@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaReact, FaNodeJs, FaDatabase, FaHtml5, FaCss3, FaGithub, FaJsSquare, FaBootstrap, FaFigma } from 'react-icons/fa';
-import { SiChai, SiExpress, SiJira, SiMocha, SiNetlify, SiPostman, SiTailwindcss, SiVercel } from 'react-icons/si';
+import { SiChai, SiJira, SiMocha, SiNetlify, SiPostman, SiTailwindcss, SiVercel } from 'react-icons/si';
 import "../styles/skills.css";
 
 const skills = [
@@ -39,11 +39,6 @@ const skills = [
     name: 'Node.js',
     icon: <FaNodeJs />,
     link: 'https://nodejs.org/',
-  },
-  {
-    name: 'Express.js',
-    icon: <SiExpress />,
-    link: 'https://expressjs.com/',
   },
   {
     name: 'MySQL',
@@ -94,14 +89,14 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="skills-section">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
+        className="skills-section"
       >
         <h2 className="section-title">Skills & Technologies</h2>
-        <div className="skills-grid">
+        <div className="skills-list">
           {skills.map((skill, index) => (
             <motion.a
               key={index}
@@ -117,7 +112,6 @@ const Skills = () => {
           ))}
         </div>
       </motion.div>
-    </section>
   );
 };
 

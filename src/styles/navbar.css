@@ -1,14 +1,17 @@
 .navbar {
   color: rgb(255, 255, 255);
-  padding: 15px;
+  padding: 10px;
   position: sticky;
+  background: #2a0152;
   top: 0;
   z-index: 1;
-  box-shadow: 0 4px 2px -2px rgb(118, 113, 113);
+  box-shadow: 0 4px 2px -2px #190030;
 }
 
 .navbar-brand {
   font-family: 'Dancing Script',cursive;
+  font-size: 20px;
+  color: #fff;
 }
 
 .navbar h1 {
@@ -35,5 +38,5 @@
 }
 
 .navbar ul li a:hover {
-  color: #000000;
+  color: #8f60e0;
 }

@@ -1,11 +1,12 @@
 /* About Section */
 .about-container {
-  width: fit-content;
-  margin: 5px;
+  width: 500px;
+  margin: auto;
   background: var(--card-bg);
-  border-radius: 5px;
-  padding: 2rem;
-  box-shadow: 2px 2px 4px grey;
+  /* border-radius: 5px; */
+  /* padding: 2rem; */
+  /* box-shadow: 2px 2px 4px grey; */
+  font-family: 'Dancing Script',cursive;
 }
 
 .about-container h2 {
@@ -14,14 +15,10 @@
   color: var(--primary-color);
 }
 
-.bio-section {
-  margin-bottom: 0rem;
-}
-
 .bio-section p {
-  line-height: 1.6;
+  line-height: 1.5;
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--text-primary);
 }
 
@@ -38,4 +35,125 @@
   .bio-section p {
     font-size: 1rem;
   }
+}
+
+/* experience css */
+.experience {
+  padding: 20px;
+  /* background-color: #f9f9f9; */
+  /* border-radius: 12px; */
+  font-family: 'Dancing Script',cursive;
+  max-width: 800px;
+  margin: 40px auto;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
+}
+
+.experience h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.experience-list {
+  display: grid;
+  gap: 20px;
+}
+
+.experience-card {
+  background-color: #3b0278;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.experience-card h4 {
+  font-size: 1.2rem;
+  color: #5384f6;
+}
+
+.duration {
+  font-style: italic;
+  color: #aaa8a8;
+}
+
+.description {
+  margin-top: 10px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 15px;
+  }
+
+  .experience-card {
+    padding: 15px;
+  }
+
+  .experience-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .experience-card h4 {
+    font-size: 1rem;
+  }
+}
+
+
+/* certifications */
+.certifications-table {
+  width: 500px;
+  /* margin: auto; */
+  padding: 10px;
+  /* background: #fff; */
+  /* border-radius: 12px; */
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  font-family: 'Dancing Script',cursive;
+  text-align: center;
+  /* overflow: hidden; */
+}
+
+.certifications-table h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #1a0135;
+  color: #fff;
+  font-size: 1rem;
+}
+
+td {
+  color: #ffffff;
+  background-color: #3b0278;
+  font-size: 1rem;
+}
+
+tr:hover {
+  background-color: #3b0278;
+}
+
+motion.tr {
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }

@@ -4,7 +4,7 @@ import "../styles/navbar.css";
 const Navbar = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav className="navbar navbar-expand-lg">
         <div className="container">
           <a className="navbar-brand" href="/">rUpALi</a>
           <button
@@ -31,12 +31,6 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/projects">Projects</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/experience">Experience</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/certifications">Certifications</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/contact">Contact</a>

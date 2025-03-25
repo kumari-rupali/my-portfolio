@@ -4,23 +4,30 @@
     flex-direction: column;
     align-items: center;
     padding: 3rem;
-    background-color: #b49df1;
-    color: #000000;
+    font-family: 'Dancing Script',cursive;
+    color: #ffffff;
 }
 
 h1,
 h2 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Dancing Script',cursive;
 }
 
 h1 {
     font-size: 2rem;
-    color: #204b75;
+    color: #ffffff;
 }
 
 h2 {
     font-size: 2rem;
-    color: #000000;
+    color: #ffffff;
+}
+
+.img-fluid{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(133, 86, 251, 0.7), rgba(20, 12, 28, 0.5));
 }
 
 .contact-section,
