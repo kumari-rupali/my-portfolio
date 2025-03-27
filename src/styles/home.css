@@ -1,39 +1,85 @@
 /* Home css */
-.home {
+.home-section {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 3rem;
-    font-family: 'Dancing Script',cursive;
     color: #ffffff;
-}
-
-h1,
-h2 {
-    font-family: 'Dancing Script',cursive;
-}
-
-h1 {
+    padding: 30px 0;
+  }
+  
+  .text-section {
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .text-section h1 {
+    font-size: 3rem;
+    color: #ffffff;
+  }
+  
+  .text-section h2 {
     font-size: 2rem;
-    color: #ffffff;
-}
+    color: #d3a3ff;
+  }
+  
+  .text-section p {
+    font-size: 1.1rem;
+    color: #cccccc;
+  }
+  
+  .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(203, 240, 84, 0.3);
+  }
+  
+  .cta-container .btn {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: #3b0278;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-container .btn:hover {
+    background-color: #d3a3ff;
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .home-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-section, .image-section {
+      text-align: center;
+    }
+  
+    .profile-pic {
+      width: 250px;
+      height: 250px;
+    }
+  }  
 
-h2 {
-    font-size: 2rem;
-    color: #ffffff;
-}
-
-.img-fluid{
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background: radial-gradient(circle, rgba(133, 86, 251, 0.7), rgba(20, 12, 28, 0.5));
-}
-
-.contact-section,
-.projects-section,
-.about-section,
-.skills-section {
-    margin-top: 50px;
-    text-align: center;
+.about-section
+.projects-section
+.skills-section
+.contact-section{
+  font-size: 1.8rem;
+  background: linear-gradient(135deg, #1e293b, #3b82f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #300355;
 }

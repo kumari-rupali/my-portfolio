@@ -1,9 +1,21 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    background-color: #190327;
+    background-color: #190228;
+    width: 100%;
     color: #ffffff;
-  }
-  
+}
+.wrapper {
+    margin-top: 80px;
+}
+
+.home-section,
+.contact-section,
+.projects-section,
+.about-section,
+.skills-section {
+    padding: 2rem;
+    text-align: center;
+}

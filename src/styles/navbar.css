@@ -1,15 +1,16 @@
 .navbar {
   color: rgb(255, 255, 255);
   padding: 10px;
-  position: sticky;
+  position: fixed;
   background: #2a0152;
   top: 0;
-  z-index: 1;
+  left: 0;
+  width: 100%;
   box-shadow: 0 4px 2px -2px #190030;
+  z-index: 1;
 }
 
 .navbar-brand {
-  font-family: 'Dancing Script',cursive;
   font-size: 20px;
   color: #fff;
 }

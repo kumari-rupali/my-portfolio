@@ -3,11 +3,10 @@
   background: #3b0278;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(95, 14, 195, 0.1);
-  padding: 3rem;
+  padding: 1rem;
   max-width: 600px;
   margin: 40px auto;
   text-align: center;
-  font-family: 'Dancing Script',cursive;
 }
 
 .contact-card h4 {

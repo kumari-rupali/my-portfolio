@@ -1,0 +1,57 @@
+/* certifications */
+.certifications-table {
+    padding: 2rem;
+    text-align: center;
+    overflow-x: auto;
+}
+
+.certifications-table h2 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+th,
+td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #1a0135;
+    color: #fff;
+    font-size: 1rem;
+}
+
+td {
+    color: #ffffff;
+    background-color: #3b0278;
+    font-size: 1rem;
+}
+
+tr:hover {
+    background-color: #3b0278;
+}
+
+motion.tr {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .certifications-table {
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+    }
+}

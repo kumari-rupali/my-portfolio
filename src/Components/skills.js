@@ -89,29 +89,28 @@ const skills = [
 
 const Skills = () => {
   return (
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="skills-section"
-      >
-        <h2 className="section-title">Skills & Technologies</h2>
-        <div className="skills-list">
-          {skills.map((skill, index) => (
-            <motion.a
-              key={index}
-              href={skill.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="skill-card"
-              whileHover={{ scale: 1.05, boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)' }}
-            >
-              <span className="skill-icon">{skill.icon}</span>
-              <h3 className="skill-name">{skill.name}</h3>
-            </motion.a>
-          ))}
-        </div>
-      </motion.div>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="skills-section"
+    >
+      <div className="skills-list">
+        {skills.map((skill, index) => (
+          <motion.a
+            key={index}
+            href={skill.link}
+            target="_blank"
+            rel="links"
+            className="skill-card"
+            whileHover={{ scale: 1.05, boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)' }}
+          >
+            <span className="skill-icon">{skill.icon}</span>
+            <h3 className="skill-name">{skill.name}</h3>
+          </motion.a>
+        ))}
+      </div>
+    </motion.div>
   );
 };
 

@@ -5,61 +5,61 @@ import "../styles/project.css";
 const projects = [
   {
     title: 'Youtube Clone',
-    description: 'A personal portfolio showcasing skills and projects.',
-    liveLink: 'https://age-checking.netlify.app/',
-    githubLink: 'https://github.com/username/age-calculator',  
+    description: 'A full-featured YouTube UI clone with video playback support.',
+    liveLink: 'https://your-live-link.com',
+    githubLink: 'https://github.com/username/youtube-clone',
   },
   {
     title: 'FreshKart App',
-    description: 'An online marketplace for fresh produce directly to the customers.',
-    liveLink: 'https://age-checking.netlify.app/',
-    githubLink: 'https://github.com/username/age-calculator',
+    description: 'An online marketplace for fresh produce.',
+    liveLink: 'https://your-live-link.com',
+    githubLink: 'https://github.com/username/freshkart-app',
   },
   {
     title: 'Naukri-Profile Clone',
     description: 'A system for managing job applications and profiles.',
-    liveLink: 'https://age-checking.netlify.app/',
-    githubLink: 'https://github.com/username/age-calculator',
+    liveLink: 'https://your-live-link.com',
+    githubLink: 'https://github.com/username/naukri-profile',
   },
   {
     title: 'Weather App',
-    description: 'A personal portfolio showcasing skills and projects.',
-    liveLink: 'https://age-checking.netlify.app/',
-    githubLink: 'https://github.com/username/age-calculator',  
-  }, 
+    description: 'Get real-time weather updates using OpenWeather API.',
+    liveLink: 'https://your-live-link.com',
+    githubLink: 'https://github.com/username/weather-app',
+  },
   {
     title: 'TO-DO App',
-    description: 'A simple calculator app with basic arithmetic functions.',
-    liveLink: 'https://age-checking.netlify.app/',
-    githubLink: 'https://github.com/username/age-calculator',
+    description: 'A simple task management application with CRUD features.',
+    liveLink: 'https://your-live-link.com',
+    githubLink: 'https://github.com/username/todo-app',
   },
   {
     title: 'Age Calculator',
-    description: 'A web app that calculates age based on birth date input.',
-    liveLink: 'https://age-checking.netlify.app/',
+    description: 'Calculates age based on user-provided birthdate.',
+    liveLink: 'https://your-live-link.com',
     githubLink: 'https://github.com/username/age-calculator',
   },
   {
     title: 'Calculator',
-    description: 'A simple calculator app with basic arithmetic functions.',
-    liveLink: 'https://age-checking.netlify.app/',
-    githubLink: 'https://github.com/username/age-calculator',
+    description: 'A simple arithmetic calculator web application.',
+    liveLink: 'https://your-live-link.com',
+    githubLink: 'https://github.com/username/calculator-app',
   },
   {
     title: 'Code Editor',
-    description: 'A personal portfolio showcasing skills and projects.',
-    liveLink: 'https://age-checking.netlify.app/',
-    githubLink: 'https://github.com/username/age-calculator',  
+    description: 'A real-time online code editor supporting multiple languages.',
+    liveLink: 'https://your-live-link.com',
+    githubLink: 'https://github.com/username/code-editor',
   },
   {
     title: 'Banking System',
-    description: 'A personal portfolio showcasing skills and projects.',
-    liveLink: 'https://age-checking.netlify.app/',
-    githubLink: 'https://github.com/username/age-calculator',  
+    description: 'A digital banking solution with secure transactions.',
+    liveLink: 'https://your-live-link.com',
+    githubLink: 'https://github.com/username/banking-system',
   },
 ];
 
-const Projects = () => {  
+const Projects = () => {
   return (
     <motion.div
       className="project-section"
@@ -67,39 +67,23 @@ const Projects = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <h2 className="section-title">Projects</h2>
       <div className="project-list">
         {projects.map((project, index) => (
           <motion.div
             key={index}
             whileHover={{ scale: 1.05 }}
             transition={{ type: 'spring', stiffness: 300 }}
+            className="project-card"
           >
-            <div className="project-card">
-              <h3>{project.title}</h3>
-              <p className="project-description">{project.description}</p>
-              <div className="project-links">
-                {project.liveLink && (
-                  <a 
-                    href={project.liveLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="project-link"
-                  >
-                    Live Demo
-                  </a>
-                )}
-                {project.githubLink && (
-                  <a 
-                    href={project.githubLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="project-link"
-                  >
-                    GitHub
-                  </a>
-                )}
-              </div>
+            <h3>{project.title}</h3>
+            <p className="project-description">{project.description}</p>
+            <div className="project-links">
+              <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="project-link">
+                Live Demo
+              </a>
+              <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
+                GitHub
+              </a>
             </div>
           </motion.div>
         ))}

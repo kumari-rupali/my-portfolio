@@ -1,21 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { motion } from 'framer-motion';
-
 import Home from './Components/home'
 import Navbar from './Components/navbar';
 import Footer from './Components/footer';
 import About from './Components/about';
 import Skills from './Components/skills';
 import Projects from './Components/projects';
-// import Experience from './Components/experience';
-// import Certifications from './Components/certifications';
 import Contact from './Components/contact';
 
 const App = () => {
   return (
     <Router>
-      <Navbar />
+      <div className="wrapper">
+        <Navbar />
+      </div>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -27,8 +26,6 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
-          {/* <Route path="/experience" element={<Experience />} />
-          <Route path="/certifications" element={<Certifications />} /> */}
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </motion.div>
