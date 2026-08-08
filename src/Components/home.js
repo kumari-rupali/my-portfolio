@@ -6,85 +6,35 @@ import Contact from './contact';
 import Projects from './projects';
 import "../styles/home.css";
 import pic from "../image/my-profile-pic.png";
-import { FaUserGraduate, FaCode, FaPhoneAlt, FaLaptopCode } from 'react-icons/fa';
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
 
-const Home = () => {
-  return (
-    <>
-      <motion.div 
-        className="container home-section" 
-        initial={{ opacity: 0 }} 
-        animate={{ opacity: 1 }} 
-        transition={{ duration: 1.5 }}
-      >
-        <div className="row align-items-center">
-          <motion.div 
-            className="col-md-6 text-section"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-          >
-            <h5 className="text-primary">Hi, My name is</h5>
-            <motion.h1 
-              initial={{ y: 100 }} 
-              animate={{ y: 0 }} 
-              transition={{ type: 'spring', stiffness: 100, damping: 10 }}
-              className="fw-bold"
-            >
-              Kumari Rupali
-            </motion.h1>
-            <h2 className="text-secondary">Full Stack Developer</h2>
-            <p>Front-end Developer | ReactJS | NodeJS | Web Enthusiast</p>
-            <p>Building meaningful and delightful digital products.</p>
+const Home = () => (
+  <main>
+    <motion.section className="container home-section" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
+      <div className="row align-items-center">
+        <motion.div className="col-md-7 text-section" initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }}>
+          <p className="text-primary hero-kicker">FRONTEND DEVELOPER · REACT.JS</p>
+          <h1>Hi, I’m <span>Kumari Rupali</span>.</h1>
+          <h2>I build clean, responsive web experiences.</h2>
+          <p className="hero-copy">React.js developer with professional experience building user-focused interfaces, API integrations and reusable frontend components.</p>
+          <div className="cta-container mt-4">
+            <a href="/projects" className="btn btn-primary btn-sm">View My Work <ArrowUpRight size={16} /></a>
+            <a href="/contact" className="btn btn-outline-light btn-sm">Let’s Connect</a>
+          </div>
+          <a className="resume-link" href="https://drive.google.com/file/d/1xk9WfZi3O1M7gqQeB5GClm73cXBTdg-L/view" target="_blank" rel="noopener noreferrer">View Resume <ArrowUpRight size={14} /></a>
+        </motion.div>
+        <motion.div className="col-md-5 image-section" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2, duration: 0.8 }}>
+          <img src={pic} alt="Kumari Rupali" className="profile-pic" />
+        </motion.div>
+      </div>
+      <a href="#about" className="scroll-hint" aria-label="Scroll to about section"><ArrowDown size={16} /> Scroll to explore</a>
+    </motion.section>
 
-            <motion.div
-              className="cta-container mt-4"
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 1, duration: 0.5 }}
-            >
-              <a 
-                href="https://drive.google.com/file/d/1xk9WfZi3O1M7gqQeB5GClm73cXBTdg-L/view?usp=drive_link"
-                className="btn btn-light btn-sm"
-                download
-              >
-                Download Resume
-              </a>
-            </motion.div>
-          </motion.div>
-
-          <motion.div 
-            className="col-md-6 image-section"
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1.2, duration: 0.8 }}
-          >
-            <img src={pic} alt="Kumari Rupali" className="profile-pic" />
-          </motion.div>
-
-        </div>
-      </motion.div>
-
-      <motion.div className="about-section" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.5 }}>
-      <h2><FaUserGraduate className="icon" /> About Me</h2>
-      <About />
-      </motion.div>
-
-            <motion.div className="projects-section" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.5 }}>
-              <h2><FaLaptopCode className="icon" /> Projects</h2>
-              <Projects />
-            </motion.div>
-
-      <motion.div className="skills-section" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 2 }}>
-        <h2><FaCode className="icon" /> Skills & Technologies</h2>
-        <Skills />
-      </motion.div>
-
-      <motion.div className="contact-section" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 2.5 }}>
-        <h2><FaPhoneAlt className="icon" /> Contact Me</h2>
-        <Contact />
-      </motion.div>
-    </>
-  );
-};
+    <section id="about" className="about-section"><h2>About Me</h2><About /></section>
+    <section className="projects-section"><h2>Selected Projects</h2><Projects /></section>
+    <section className="skills-section"><h2>Skills & Technologies</h2><Skills /></section>
+    <section className="contact-section"><h2>Let’s Work Together</h2><Contact /></section>
+  </main>
+);
 
 export default Home;
