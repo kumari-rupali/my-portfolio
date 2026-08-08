@@ -1,95 +1,94 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Github, ExternalLink } from 'lucide-react';
 import "../styles/project.css";
 
 const projects = [
   {
-    title: 'Youtube Clone',
-    description: 'A full-featured YouTube UI clone with video playback support.',
-    liveLink: 'https://your-live-link.com',
-    githubLink: 'https://github.com/username/youtube-clone',
+    title: 'E-Commerce / Flipkart Clone',
+    description: 'Responsive shopping experience with product discovery, cart, wishlist, authentication, orders and checkout flows.',
+    tech: 'React • TypeScript • Firebase • Zustand • Tailwind CSS',
+    githubLink: 'https://github.com/kumari-rupali/E-commerce',
   },
   {
-    title: 'FreshKart App',
-    description: 'An online marketplace for fresh produce.',
-    liveLink: 'https://your-live-link.com',
-    githubLink: 'https://github.com/username/freshkart-app',
+    title: 'Freshcart',
+    description: 'Modern grocery e-commerce application focused on product browsing, categories, cart management and responsive UX.',
+    tech: 'React • JavaScript • REST APIs • Bootstrap',
+    githubLink: 'https://github.com/kumari-rupali/Freshcart',
   },
   {
-    title: 'Naukri-Profile Clone',
-    description: 'A system for managing job applications and profiles.',
-    liveLink: 'https://your-live-link.com',
-    githubLink: 'https://github.com/username/naukri-profile',
+    title: 'Naukri Profile Clone',
+    description: 'Job-profile interface designed around professional information, skills, education and recruiter-friendly presentation.',
+    tech: 'React • JavaScript • CSS • Bootstrap',
+    githubLink: 'https://github.com/kumari-rupali/Naukri-Profile',
+  },
+  {
+    title: 'Streaming App / YouTube Clone',
+    description: 'Video-streaming style interface with reusable UI components, content discovery and responsive layouts.',
+    tech: 'React • JavaScript • APIs • CSS',
+    githubLink: 'https://github.com/kumari-rupali/Streaming-App',
+  },
+  {
+    title: 'Job Application Tracker',
+    description: 'A productivity-focused application for organizing job applications, tracking stages and keeping a structured job-search workflow.',
+    tech: 'React • JavaScript • CSS',
+    githubLink: 'https://github.com/kumari-rupali/Job-Application-Tracker',
+  },
+  {
+    title: 'Team Collaboration Tool',
+    description: 'Collaborative workspace concept for managing team tasks, communication and project progress.',
+    tech: 'React • JavaScript • REST APIs',
+    githubLink: 'https://github.com/kumari-rupali/Team-collaboration-Tool',
   },
   {
     title: 'Weather App',
-    description: 'Get real-time weather updates using OpenWeather API.',
-    liveLink: 'https://your-live-link.com',
-    githubLink: 'https://github.com/username/weather-app',
-  },
-  {
-    title: 'TO-DO App',
-    description: 'A simple task management application with CRUD features.',
-    liveLink: 'https://your-live-link.com',
-    githubLink: 'https://github.com/username/todo-app',
-  },
-  {
-    title: 'Age Calculator',
-    description: 'Calculates age based on user-provided birthdate.',
-    liveLink: 'https://your-live-link.com',
-    githubLink: 'https://github.com/username/age-calculator',
-  },
-  {
-    title: 'Calculator',
-    description: 'A simple arithmetic calculator web application.',
-    liveLink: 'https://your-live-link.com',
-    githubLink: 'https://github.com/username/calculator-app',
+    description: 'Weather dashboard that consumes an external API and presents current conditions through a clean responsive interface.',
+    tech: 'React • JavaScript • REST API • CSS',
+    githubLink: 'https://github.com/kumari-rupali/weather-app',
   },
   {
     title: 'Code Editor',
-    description: 'A real-time online code editor supporting multiple languages.',
-    liveLink: 'https://your-live-link.com',
-    githubLink: 'https://github.com/username/code-editor',
-  },
-  {
-    title: 'Banking System',
-    description: 'A digital banking solution with secure transactions.',
-    liveLink: 'https://your-live-link.com',
-    githubLink: 'https://github.com/username/banking-system',
+    description: 'Browser-based coding interface demonstrating interactive editor UI and developer-focused frontend interactions.',
+    tech: 'React • JavaScript • CSS',
+    githubLink: 'https://github.com/kumari-rupali/Code-editor-with-codes',
   },
 ];
 
-const Projects = () => {
-  return (
-    <motion.div
-      className="project-section"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-    >
-      <div className="project-list">
-        {projects.map((project, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: 'spring', stiffness: 300 }}
-            className="project-card"
-          >
-            <h3>{project.title}</h3>
-            <p className="project-description">{project.description}</p>
-            <div className="project-links">
-              <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="project-link">
-                Live Demo
-              </a>
-              <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
-                GitHub
-              </a>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-    </motion.div>
-  );
-};
+const Projects = () => (
+  <motion.div
+    className="project-section"
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.15 }}
+    transition={{ duration: 0.6 }}
+  >
+    <div className="project-list">
+      {projects.map((project, index) => (
+        <motion.article
+          key={project.title}
+          className="project-card"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: index * 0.05 }}
+          whileHover={{ y: -6 }}
+        >
+          <span className="project-number">0{index + 1}</span>
+          <h3>{project.title}</h3>
+          <p className="project-description">{project.description}</p>
+          <p className="project-tech">{project.tech}</p>
+          <div className="project-links">
+            <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
+              <Github size={16} /> GitHub
+            </a>
+            <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link secondary">
+              <ExternalLink size={16} /> Repository
+            </a>
+          </div>
+        </motion.article>
+      ))}
+    </div>
+  </motion.div>
+);
 
 export default Projects;
