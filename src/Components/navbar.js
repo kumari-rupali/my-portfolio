@@ -1,42 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 import "../styles/navbar.css";
 
+const links = [
+  ['Home', '/'],
+  ['About', '/about'],
+  ['Skills', '/skills'],
+  ['Projects', '/projects'],
+  ['Contact', '/contact'],
+];
+
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <header>
-      <nav className="navbar navbar-expand-lg">
-        <div className="container">
-          <a className="navbar-brand" href="/">rUpALi</a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <a className="nav-link" href="/">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/about">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/skills">Skills</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/projects">Projects</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+    <header className="site-header">
+      <nav className="navbar container" aria-label="Primary navigation">
+        <a className="navbar-brand" href="/" aria-label="Kumari Rupali home">Rupali<span>.</span></a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={() => setOpen((value) => !value)}
+          aria-expanded={open}
+          aria-controls="navbarNav"
+          aria-label={open ? 'Close navigation' : 'Open navigation'}
+        >
+          {open ? <X size={22} /> : <Menu size={22} />}
+        </button>
+        <div className={`navbar-menu ${open ? 'is-open' : ''}`} id="navbarNav">
+          {links.map(([label, href]) => (
+            <a key={href} className="nav-link" href={href} onClick={() => setOpen(false)}>{label}</a>
+          ))}
+          <a className="nav-cta" href="/contact" onClick={() => setOpen(false)}>Let’s Connect</a>
         </div>
       </nav>
     </header>
