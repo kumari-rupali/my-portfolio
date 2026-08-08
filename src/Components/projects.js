@@ -29,10 +29,10 @@ const projects = [
     githubLink: 'https://github.com/kumari-rupali/Streaming-App',
   },
   {
-    title: 'Job Application Tracker',
-    description: 'A productivity-focused application for organizing job applications, tracking stages and keeping a structured job-search workflow.',
+    title: 'Task Management App',
+    description: 'Productivity application demonstrating task organization, CRUD interactions and a structured workflow UI.',
     tech: 'React • JavaScript • CSS',
-    githubLink: 'https://github.com/kumari-rupali/Job-Application-Tracker',
+    githubLink: 'https://github.com/kumari-rupali/Task-manager-App',
   },
   {
     title: 'Team Collaboration Tool',
@@ -55,35 +55,17 @@ const projects = [
 ];
 
 const Projects = () => (
-  <motion.div
-    className="project-section"
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, amount: 0.15 }}
-    transition={{ duration: 0.6 }}
-  >
+  <motion.div className="project-section" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.6 }}>
     <div className="project-list">
       {projects.map((project, index) => (
-        <motion.article
-          key={project.title}
-          className="project-card"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: index * 0.05 }}
-          whileHover={{ y: -6 }}
-        >
-          <span className="project-number">0{index + 1}</span>
+        <motion.article key={project.title} className="project-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: index * 0.05 }} whileHover={{ y: -6 }}>
+          <span className="project-number">{String(index + 1).padStart(2, '0')}</span>
           <h3>{project.title}</h3>
           <p className="project-description">{project.description}</p>
           <p className="project-tech">{project.tech}</p>
           <div className="project-links">
-            <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
-              <Github size={16} /> GitHub
-            </a>
-            <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link secondary">
-              <ExternalLink size={16} /> Repository
-            </a>
+            <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link"><Github size={16} /> GitHub</a>
+            <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link secondary"><ExternalLink size={16} /> Repository</a>
           </div>
         </motion.article>
       ))}
