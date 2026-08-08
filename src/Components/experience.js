@@ -3,50 +3,48 @@ import { motion } from 'framer-motion';
 import "../styles/experience.css";
 
 const experiences = [
-    {
-        company: 'Kaaylabs Pvt. Ltd.',
-        role: 'Associate Software Engineer',
-        duration: 'Sep 2023 - Sep 2024',
-        description: [
-            'Developed and maintained web applications using React and Node.js',
-            'Implemented RESTful APIs and integrated with various services',
-            'Collaborated with cross-functional teams to deliver high-quality software'
-        ]
-    },
-    {
-        role: 'React Developer Intern',
-        company: 'Kaaylabs Pvt. Ltd.',
-        duration: 'May 2023 - Sep 2023',
-        description: 'Developed a Naukri profile application and a calculator tool as part of internship projects.',
-    },
+  {
+    company: 'Kaay Labs Pvt. Ltd.',
+    role: 'Associate Software Engineer',
+    duration: 'Sep 2023 – Aug 2024',
+    description: [
+      'Built and maintained responsive web interfaces using React.js, JavaScript, HTML5 and CSS3.',
+      'Integrated REST APIs and collaborated with cross-functional teams to deliver production features.',
+      'Worked with reusable components, debugging, Git workflows and performance-focused UI improvements.'
+    ]
+  },
+  {
+    company: 'Kaay Labs Pvt. Ltd.',
+    role: 'React.js Developer Intern',
+    duration: 'May 2023 – Sep 2023',
+    description: [
+      'Developed React-based interfaces and reusable UI components during internship projects.',
+      'Worked on a Naukri-style profile application and interactive utility applications.'
+    ]
+  },
 ];
 
-const Experience = () => {
-    return (
-        <>
-            <motion.div
-                className="experience"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 0.5 }}
-            >
-                <div className="experience-list">
-                    {experiences.map((exp, index) => (
-                        <motion.div
-                            key={index}
-                            className="experience-card"
-                            whileHover={{ scale: 1.02, boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)' }}
-                        >
-                            <h3>{exp.role}</h3>
-                            <h4>{exp.company}</h4>
-                            <p className="duration">{exp.duration}</p>
-                            <p className="description">{exp.description}</p>
-                        </motion.div>
-                    ))}
-                </div>
-            </motion.div>
-        </>
-    )
-}
+const Experience = () => (
+  <motion.div
+    className="experience"
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    viewport={{ once: true, amount: 0.15 }}
+    transition={{ duration: 0.7 }}
+  >
+    <div className="experience-list">
+      {experiences.map((exp) => (
+        <motion.article key={`${exp.role}-${exp.duration}`} className="experience-card" whileHover={{ y: -4 }}>
+          <p className="duration">{exp.duration}</p>
+          <h3>{exp.role}</h3>
+          <h4>{exp.company}</h4>
+          <ul className="description">
+            {exp.description.map((item) => <li key={item}>{item}</li>)}
+          </ul>
+        </motion.article>
+      ))}
+    </div>
+  </motion.div>
+);
 
 export default Experience;
