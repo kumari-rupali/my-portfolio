@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Kumari Rupali — Frontend Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A personal developer portfolio showcasing my experience, skills and selected frontend projects. Built with React and designed to present practical React.js work, responsive UI development and API-driven applications.
 
-## Available Scripts
+## ✨ Highlights
 
-In the project directory, you can run:
+- Responsive portfolio website
+- Animated sections with Framer Motion
+- Mobile-friendly navigation
+- Projects with direct GitHub repository links
+- Experience and skills sections
+- Resume and contact CTAs
+- Social and professional profile links
+- Accessible navigation labels and external-link handling
 
-### `npm start`
+## 🧰 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 19
+- JavaScript (ES6+)
+- React Router
+- Bootstrap / React Bootstrap
+- Framer Motion
+- Lucide React / React Icons
+- CSS3
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📂 Featured Work
 
-### `npm test`
+- E-Commerce / Flipkart-style shopping application
+- Freshcart grocery e-commerce application
+- Naukri Profile Clone
+- Streaming App / YouTube-style application
+- Task Management App
+- Team Collaboration Tool
+- Weather App
+- Code Editor
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Run Locally
 
-### `npm run build`
+```bash
+git clone https://github.com/kumari-rupali/my-portfolio.git
+cd my-portfolio
+npm install
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Open `http://localhost:3000` in your browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🏗️ Production Build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run build
+```
 
-### `npm run eject`
+The production output is generated in the `build/` directory.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ☁️ Deploy to Vercel
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Import the `kumari-rupali/my-portfolio` repository into Vercel.
+2. Select **Create React App** if Vercel asks for a framework preset.
+3. Build command: `npm run build`.
+4. Output directory: `build`.
+5. Deploy.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If a custom domain is added later, update the relevant SEO metadata in `public/index.html`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 👩‍💻 About Me
 
-## Learn More
+I'm Kumari Rupali, a frontend developer focused on React.js, JavaScript, responsive UI development and building practical web applications.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Core Skills
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- React.js
+- JavaScript (ES6+)
+- HTML5 / CSS3
+- Bootstrap / Tailwind CSS
+- REST API integration
+- Git / GitHub
+- Figma
+- Responsive Web Design
 
-### Code Splitting
+## 📫 Connect
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: https://github.com/kumari-rupali
+- LinkedIn: https://www.linkedin.com/in/kumarirupali/
+- Email: kumarirupali992@gmail.com
 
-### Analyzing the Bundle Size
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This portfolio is a personal project. Project names, descriptions and links are provided for portfolio and demonstration purposes.
