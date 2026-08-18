@@ -1,17 +1,41 @@
 # Kumari Rupali — Frontend Developer Portfolio
 
-A personal developer portfolio showcasing my experience, skills and selected frontend projects. Built with React and designed to present practical React.js work, responsive UI development and API-driven applications.
+A personal developer portfolio showcasing React.js projects, production deployments, frontend experience, responsive UI work and practical web applications.
 
-## ✨ Highlights
+## 🌐 Portfolio
 
-- Responsive portfolio website
+- **Primary portfolio:** https://kumarirupali-portfolio.vercel.app
+- **Alternate deployment:** https://my-portfolio-mu-taupe-93.vercel.app
+- **GitHub:** https://github.com/kumari-rupali
+
+## 🚀 Featured Projects
+
+| Project | GitHub | Live Demo |
+|---|---|---|
+| Job Drive | https://github.com/kumari-rupali/job-drive | https://lify-job-drive.vercel.app |
+| E-Commerce / Flipkart-style Store | https://github.com/kumari-rupali/E-commerce | https://saharika.vercel.app |
+| Freshcart | https://github.com/kumari-rupali/Freshcart | — |
+| Naukri Profile Clone | https://github.com/kumari-rupali/Naukri-Profile | https://naukri-profile.vercel.app |
+| Streaming App / YouTube Clone | https://github.com/kumari-rupali/Streaming-App | https://qtube-streaming-app.vercel.app |
+| Job Application Tracker | — | https://lify-job-tracker.vercel.app |
+| Task Management App | https://github.com/kumari-rupali/Task-manager-App | https://task-manager-tools.netlify.app |
+| Weather Dashboard | https://github.com/kumari-rupali/weather-app | https://current-weather-dash.netlify.app |
+| Code Editor | https://github.com/kumari-rupali/Code-editor-with-codes | — |
+| Team Collaboration Tool | https://github.com/kumari-rupali/Team-collaboration-Tool | — |
+| Calculator App | https://github.com/kumari-rupali/Calculator-App | https://calculator025.netlify.app |
+| Age Calculator | https://github.com/kumari-rupali/age-calculator-app-main | https://age-checking.netlify.app |
+
+## ✨ Portfolio Highlights
+
+- Responsive developer portfolio
 - Animated sections with Framer Motion
 - Mobile-friendly navigation
-- Projects with direct GitHub repository links
+- GitHub repository links for projects
+- Live demo links for deployed projects
 - Experience and skills sections
 - Resume and contact CTAs
-- Social and professional profile links
-- Accessible navigation labels and external-link handling
+- Professional social profile links
+- Recruiter-focused project presentation
 
 ## 🧰 Tech Stack
 
@@ -22,17 +46,6 @@ A personal developer portfolio showcasing my experience, skills and selected fro
 - Framer Motion
 - Lucide React / React Icons
 - CSS3
-
-## 📂 Featured Work
-
-- E-Commerce / Flipkart-style shopping application
-- Freshcart grocery e-commerce application
-- Naukri Profile Clone
-- Streaming App / YouTube-style application
-- Task Management App
-- Team Collaboration Tool
-- Weather App
-- Code Editor
 
 ## 🚀 Run Locally
 
@@ -55,13 +68,11 @@ The production output is generated in the `build/` directory.
 
 ## ☁️ Deploy to Vercel
 
-1. Import the `kumari-rupali/my-portfolio` repository into Vercel.
-2. Select **Create React App** if Vercel asks for a framework preset.
+1. Import `kumari-rupali/my-portfolio` into Vercel.
+2. Select **Create React App** if Vercel asks for the framework preset.
 3. Build command: `npm run build`.
 4. Output directory: `build`.
 5. Deploy.
-
-If a custom domain is added later, update the relevant SEO metadata in `public/index.html`.
 
 ## 👩‍💻 About Me
 
