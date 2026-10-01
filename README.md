@@ -5,7 +5,6 @@ A personal developer portfolio showcasing React.js projects, production deployme
 ## 🌐 Portfolio
 
 - **Primary portfolio:** https://kumarirupali-portfolio.vercel.app
-- **Alternate deployment:** https://my-portfolio-mu-taupe-93.vercel.app
 - **GitHub:** https://github.com/kumari-rupali
 
 ## 🚀 Featured Projects
